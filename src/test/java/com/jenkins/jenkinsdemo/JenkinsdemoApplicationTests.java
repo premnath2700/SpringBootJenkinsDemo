@@ -27,7 +27,7 @@ class JenkinsdemoApplicationTests {
 		MvcResult result = mockMvc.perform(request).andReturn();
 		String contentAsString = result.getResponse().getContentAsString();
 		
-		assertEquals("Hello from Jenkins....!", contentAsString);
+		assertEquals("Hello from Jenkins!", contentAsString);
 		assertNotEquals("Hello from Jenkins!!!", contentAsString);
 		
 	}
